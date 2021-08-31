@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Results">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/resultsHeadingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_results" />
+
+        <TextView
+            android:id="@+id/resulstRankTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rank" />
+
+        <TextView
+            android:id="@+id/resultsAccuracyCorrectTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Percentage Corrrect" />
+
+        <TextView
+            android:id="@+id/resultsCorrectTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Correct" />
+
+        <TextView
+            android:id="@+id/resultsIncorrectTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Incorrect" />
+
+        <TextView
+            android:id="@+id/resultsBestStreakTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bestStreak" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/intervalsWrongTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intervals You Got Wrong" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="555dp" />
+
+        <Button
+            android:id="@+id/resultsViewRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/view_records" />
+
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
